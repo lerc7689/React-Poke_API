@@ -3,7 +3,7 @@ body{
 }
 .pokedexIDcard{
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
 }
@@ -62,13 +62,12 @@ h1{
 }
 @media (min-width: 320px) and (max-width: 578px) {
     .allInfoContainer{
-        font-size: 5px;
+        font-size: 6px;
         padding-top: 5px;
         margin-bottom: 5px;
         width: 70%;
         gap: 0px;
     }
-    
     .types{
         margin-top: 10px;
     }
