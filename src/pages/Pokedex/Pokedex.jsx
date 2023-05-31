@@ -7,6 +7,7 @@ import PokemonCard from "../../components/PokemonCard/PokemonCard";
 import {usePagination} from "../../hooks/usePagination";
 import Pagination from "../../components/pagination/Pagination"
 import SearchByName from "../../components/Search/Search";
+import SettingsModalComp from "../../components/SettingsModal/SettingsModal";
 
 const Pokedex = () =>{
     const {userName} = useContext(userNameContext);
@@ -16,6 +17,8 @@ const Pokedex = () =>{
 
     return(
     <>
+        <SettingsModalComp setQuatityPagination={setQuatityPagination} />
+
         <p className="trainerMessage"> <em className="trainerMessage_userName">Welcome {userName},</em> here you can find your favorite pokemon</p>
         
         <SearchByName nameInitial={pokemonName} typeInitial={pokemonTypeId} />
@@ -26,16 +29,7 @@ const Pokedex = () =>{
             pageNumber={pageNumber} 
             setQuatityPagination={setQuatityPagination}
         />
-        
-        {/* <div className="select">
-        <select name="select" onChange={(e)=>  {if(Number(e.target.value))setQuatityPagination(e.target.value)}}>
-        <option selected>Change quantity per page</option>
-            <option >10</option>
-            <option >15</option>
-            <option >20</option>
-        </select>
-        </div> */}
-        
+              
         <div className="pokemonList">
         {listSlice && (
             listSlice.map(pokemon =>

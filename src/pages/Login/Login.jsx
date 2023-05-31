@@ -27,8 +27,8 @@ const Login = () =>{
         const name = e.target.value;
         if(!inputHasAlreadyTouched.current) inputHasAlreadyTouched.current =true;
         if(!name) setNameError("the name is empty")
-        else if(/[^a-z]/i.test(name)) setNameError("only letters and spaces are allowed")
-        else if(!/[a-z]{2,} ?$/.test(name)) setNameError("the name must have at least two letters")
+        else if(/[^a-zA-Z]/i.test(name)) setNameError("only letters and spaces are allowed")
+        else if(!/[a-zA-Z]{2,} ?$/.test(name)) setNameError("the name must have at least two letters")
         else setNameError("")
 
         setTrainerNameInut(name)

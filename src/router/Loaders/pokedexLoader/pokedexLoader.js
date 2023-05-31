@@ -25,7 +25,5 @@ export const pokedexLoader = async({ request }) => {
         pokemons = await getPokemonsByTypeId(pokemonTypeId);
     }
 
-
-
     return { pokemons, pokemonName, pokemonTypeId };
 }

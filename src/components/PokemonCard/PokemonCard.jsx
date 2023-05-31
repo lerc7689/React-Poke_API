@@ -37,7 +37,7 @@ const PokemonCard = ({pokemonID}) =>{
         <div className="types_container" id={pokemon?.id}>
             <p id={pokemon?.id}><b id={pokemon?.id}>Type: </b></p>
             {pokemon?.types.map(t =>
-            <p key={t.type.name} id={pokemon?.id}>{t.type.name} - </p>)}
+            <p key={t.type.name} id={pokemon?.id}>{t.type.name} /</p>)}
         </div>
         <div className="stats_container" id={pokemon?.id}>
             {pokemon?.stats.map(t =>
