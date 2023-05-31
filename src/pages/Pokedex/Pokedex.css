@@ -1,0 +1,29 @@
+.trainerMessage {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    margin: 30px;
+}
+
+.trainerMessage_userName {
+    color: #FE1936;
+}
+
+.pokemonList {
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 320px) and (max-width: 766px) {
+    .trainerMessage {
+        font-size: 20px;
+        margin: 15px;
+        margin-top: 50px;
+    }
+}

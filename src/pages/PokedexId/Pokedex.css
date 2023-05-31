@@ -1,0 +1,87 @@
+body{
+    margin-top: -15px;
+}
+.pokedexIDcard{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+}
+.imgCotainer{
+    width: 30%;
+    height: 100%;
+    background-color: #D93F3F;
+    border-right: 2px black solid;
+}
+.imgCotainer > img{
+    width: 90%;
+    height: 90%;
+}
+.allInfoContainer{
+    width: 70%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:start;
+    gap: 10px;
+}
+h1{
+    text-align: center;
+    width: 100%;
+    color: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+}
+.types,
+.abilities,
+.movements,
+.stats{
+    display: flex;
+    flex-wrap: wrap;
+}
+.typeTitle,
+.abilityTitle,
+.statTitle,
+.moveTitle{
+    color: white;
+    background-color:#D93F3F;
+    border-radius: 10px;
+    margin: 3px;
+    padding: 3px;
+}
+.singleType,
+.singleAbility,
+.singleMove,
+.singleStat{
+    color: white;
+    background-color: gray;
+    border-radius: 10px;
+    margin: 3px;
+    padding: 3px;
+}
+@media (min-width: 320px) and (max-width: 578px) {
+    .allInfoContainer{
+        font-size: 5px;
+        padding-top: 5px;
+        margin-bottom: 5px;
+        width: 70%;
+        gap: 0px;
+    }
+    
+    .types{
+        margin-top: 10px;
+    }
+}
+@media (min-width: 579px) and (max-width: 768px) {
+    .allInfoContainer{
+        font-size: 7px;
+        gap: 0px;
+    }
+
+}
+@media (min-width: 769px) and (max-width: 1060px) {
+    .allInfoContainer{
+        font-size: 10px;
+    }
+}

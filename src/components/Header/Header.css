@@ -1,0 +1,124 @@
+header {
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    z-index: 15;
+}
+body{
+   padding-top: 0px;
+   padding-bottom: 10px;
+   padding-top: 80px;
+}
+
+.redDiv {
+    background-color: #d42828;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.logoutBtn{
+    margin-right: 20px;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: white;
+    color: #d42828;
+    font-weight: 900;
+    font-size: larger;
+    border: thin solid black;
+    transition: 0.8s;
+}
+.logoutBtn:hover{
+    cursor: pointer;
+}
+.logoutBtn:active{
+    background-color: rgb(153, 151, 151);
+}
+
+.blackDiv {
+    background-color: black;
+    width: 100%;
+    height: 40px;
+}
+
+.ballDiv {
+    width: 70px;
+    height: 70px;
+    border: 7px solid black;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:75px;
+    z-index: 20;
+    right: 90px;
+}
+
+.insideBallDiv {
+    width: 40px;
+    height: 40px;
+    border: 7px solid black;
+    border-radius: 50%;
+    background-color: rgb(31, 30, 30);
+}
+
+.imageContainer>img {
+    width: 100%;
+}
+
+.imageContainer {
+    width: 400px;
+    height: 100px;
+    position: absolute;
+    top:35px;
+    left: 80px;
+}
+
+@media (min-width: 320px) and (max-width: 766px) {
+    Header{
+        top:0px;
+    }
+    .redDiv {
+        background-color: #d42828;
+        height: 35px;
+    }
+    .logoutBtn{
+        width: 50px;
+        height: 16px;
+        font-size: 10px;
+        margin-right: 5px;
+    }
+    .blackDiv {
+        background-color: black;
+        height: 25px;
+    }
+    .ballDiv {
+        width: 45px;
+        height: 45px;
+        right: 20px;
+        top:28px;
+        z-index: 20;
+    }
+    .insideBallDiv {
+        width: 23px;
+        height: 23px;
+    }
+    .imageContainer {
+        width: 150px;
+        height: 50px;
+        position: absolute;
+        top: 10px;
+        left: 40px;
+        z-index: 20;
+    }
+    body{
+        padding-top: 30px;
+        padding-bottom: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}

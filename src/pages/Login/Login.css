@@ -1,0 +1,153 @@
+.loginContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    height: 71vh;
+    position: relative;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.insideForm {
+    display: flex;
+}
+
+.login_img>img {
+    width: 100%;
+}
+
+.loginTitle {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 61px;
+    align-items: center;
+    text-align: center;
+    color: #FE1936;
+}
+
+h2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #302F2F;
+}
+
+.nameError {
+    color: #FE1936;
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.insideForm>input {
+    width: 550px;
+    height: 50px;
+    font-size: medium;
+    text-align: center;
+    border: none;
+    background-color: #ec828294;
+}
+
+.insideForm>button {
+    width: 150px;
+    height: 50px;
+    background: #D93F3F;
+    font-weight: 500;
+    color: white;
+    border: none;
+}
+
+.loginFooterContainer {
+    width: 100%;
+    position: relative;
+    bottom: -31px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.redDivlogin {
+    background-color: #d42828;
+    width: 100%;
+    height: 50px;
+}
+
+.blackDivlogin {
+    background-color: black;
+    width: 100%;
+    height: 40px;
+}
+
+.ballDivlogin {
+    width: 70px;
+    height: 70px;
+    border: 7px solid black;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 5px;
+}
+
+.insideBallDivlogin {
+    width: 40px;
+    height: 40px;
+    border: 7px solid black;
+    border-radius: 50%;
+    background-color: rgb(31, 30, 30);
+}
+
+@media (min-width: 320px) and (max-width: 766px) {
+    .loginFooterContainer {
+        bottom: -70px;
+    }
+    .login_img {
+        width: 250px;
+        height: 50px;
+    }
+    h1 {
+        font-size: 25px;
+    }
+    h2 {
+        font-size: 15px;
+    }
+    .insideForm>input {
+        width: 200px;
+        height: 30px;
+        font-size: small;
+    }
+    .insideForm>button {
+        width: 50px;
+        height: 30px;
+    }
+    .redDivlogin {
+        background-color: #d42828;
+        height: 30px;
+    }
+    .blackDivlogin {
+        background-color: black;
+        height: 25px;
+    }
+    .ballDivlogin {
+        width: 50px;
+        height: 50px;
+    }
+    .insideBallDivlogin {
+        width: 25px;
+        height: 25px;
+    }
+}

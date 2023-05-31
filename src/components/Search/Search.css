@@ -1,0 +1,75 @@
+.searchForm {
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.insideFormPokedex {
+    width: 100%;
+    display: flex;
+}
+
+.insideFormPokedex>input {
+    width: 450px;
+    height: 50px;
+    font-size: medium;
+    text-align: center;
+    border: none;
+    background-color: #ec828294;
+}
+
+.insideFormPokedex>button {
+    width: 150px;
+    height: 50px;
+    background: #D93F3F;
+    font-weight: 500;
+    color: white;
+    border: none;
+}
+.insideFormPokedex>button:hover{
+    background: #ec5555;
+    cursor: pointer;
+}
+.insideFormPokedex>button:active{
+    background: #b33c3c;
+}
+.searchError {
+    text-align: center;
+    color: #D93F3F;
+}
+.pokemonType{
+    width: 450px;
+    height: 50px;
+    font-size: medium;
+}
+.pokemonType:hover{
+    cursor: pointer;
+}
+.pokemonType > option:checked{
+    font-weight: 900;
+    color: #D93F3F;
+}
+@media (min-width: 320px) and (max-width: 766px) {
+    .insideFormPokedex>input,
+    .pokemonType,
+    .insideFormPokedex>button 
+    {
+        width: 90px;
+        height: 25px;
+        font-size: small;
+    }
+    .insideFormPokedex>input{
+        font-size: 8px;
+    }
+    
+}
+@media (min-width: 767px) and (max-width: 990px) {
+    .insideFormPokedex>input,
+    .pokemonType,
+    .insideFormPokedex>button 
+    {
+        width: 250px;
+        height: 50px;
+        font-size: small;
+    }
+}

@@ -1,0 +1,49 @@
+/* .select {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+select {
+    background-color: #d42828;
+    color: black;
+} */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: 10px;
+    margin-bottom: 30px;
+}
+
+.btnPages {
+    border-radius: 10px;
+    color: #d42828;
+    border: none;
+    margin: 3px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.btnBackNext {
+    background-color: #d42828;
+    color: white;
+    border: none;
+    margin: 3px;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.btnBackNext:active {
+    background-color: #14616d;
+}
+@media (min-width: 320px) and (max-width: 766px) {
+    
+    .btnPages,
+    .btnBackNext {
+        font-size: 8px;
+    }
+}
