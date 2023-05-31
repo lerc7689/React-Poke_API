@@ -113,7 +113,7 @@ h2 {
 
 @media (min-width: 320px) and (max-width: 766px) {
     .loginFooterContainer {
-        bottom: -90px;
+        bottom: -110px;
     }
     .login_img {
         width: 250px;
