@@ -8,6 +8,11 @@
     height: 71vh;
     position: relative;
 }
+.loginTrainerMessage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 form {
     display: flex;

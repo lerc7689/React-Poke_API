@@ -41,7 +41,7 @@ const Login = () =>{
             <div className="login_img">
                 <img src={pokedex_img} alt="pokedex_img" />
             </div>
-            <div className="trainerMessage">
+            <div className="loginTrainerMessage">
              <h1 className="loginTitle">¡Hi trainer!</h1>
              <h2>To start, give me your name</h2>
             </div>
