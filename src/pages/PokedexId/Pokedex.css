@@ -26,11 +26,11 @@ body{
     align-items:start;
     gap: 10px;
 }
-h1{
+.detailPokemonName{
     text-align: center;
     width: 100%;
     color: black;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* font-family:'Times New Roman', Times, serif; */
     font-weight: bolder;
     background-color: antiquewhite;
 }
@@ -69,14 +69,29 @@ h1{
         width: 70%;
         gap: 0px;
     }
-    .types{
-        margin-top: 10px;
+    .detailPokemonName{
+        margin-top: 100px;
+        margin-bottom: 0px;
+        font-size: 30px;
+    }
+    .movements{
+        margin-bottom: 10px;
+        font-size: 7px;
     }
 }
 @media (min-width: 579px) and (max-width: 768px) {
     .allInfoContainer{
         font-size: 7px;
         gap: 0px;
+    }
+    .detailPokemonName{
+        margin-top: 50px;
+        margin-bottom: 20px;
+        font-size: 40px;
+    }
+    .movements{
+        margin-bottom: 20px;
+        font-size: 10px;
     }
 
 }

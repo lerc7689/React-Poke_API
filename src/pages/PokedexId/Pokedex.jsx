@@ -33,7 +33,7 @@ const PokedexId = () =>{
                 <img src={getPokemonImg(pokemonDetail?.sprites)} alt="" />
             </div>
             <div className="allInfoContainer">
-                <h1><b>#{pokemonId} {pokemonDetail?.name[0].toUpperCase() + pokemonDetail?.name.slice(1)}</b></h1>
+                <h1 className="detailPokemonName"><b>#{pokemonId} {pokemonDetail?.name[0].toUpperCase() + pokemonDetail?.name.slice(1)}</b></h1>
                 <p className="types"><b className="typeTitle">Type:</b> {pokemonDetail?.types.map(t => <p className="singleType">{t.type.name}</p>)} </p> 
                 <p className="abilities"><b className="abilityTitle">Abilities:</b> {pokemonDetail?.abilities.map(a => <p className="singleAbility">{a.ability.name}</p> )} </p>
                 <p className="stats"><b className="statTitle">Stats: </b>{pokemonDetail?.stats.map(s => <p className="singleStat">{ s.stat.name + " : " + s.base_stat} </p>)}</p>
