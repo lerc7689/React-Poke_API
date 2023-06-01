@@ -1,0 +1,23 @@
+.pageNotFound{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    color: red;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: transparent;
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+.imgContainerNotFound{
+    width: 90vw;
+    height: 80vh;  
+}
+
+.imgContainerNotFound > img {
+    width: 100%;
+    height: 100%;
+
+}

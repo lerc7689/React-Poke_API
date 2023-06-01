@@ -29,7 +29,7 @@ const PokemonCard = ({pokemonID}) =>{
     return(
     <>
     <div className="pokemonCard"  id={pokemon?.id}>
-        <h2 className="title"  id={pokemon?.id}>{pokemon?.name}</h2>
+        <h2 className="title"  id={pokemon?.id}>{pokemon?.name[0].toUpperCase() + pokemon?.name.slice(1)}</h2>
         <div className="image_container">
             <img className="frontimg"src={getPokemonImg(pokemon?.sprites)} alt="" id={pokemon?.id}/>
             <img className="backimg" src={backpokeball} alt="" id={pokemon?.id}/>
@@ -41,7 +41,7 @@ const PokemonCard = ({pokemonID}) =>{
         </div>
         <div className="stats_container" id={pokemon?.id}>
             {pokemon?.stats.map(t =>
-            <p key={t.stat.name} id={pokemon?.id}><b id={pokemon?.id}>{t.stat.name}</b> : {t.base_stat}</p>)}
+            <p key={t.stat.name} id={pokemon?.id}><b id={pokemon?.id}>{t.stat.name[0].toUpperCase() + t.stat.name.slice(1)}</b> : {t.base_stat}</p>)}
         </div>
     </div>
     </>)
