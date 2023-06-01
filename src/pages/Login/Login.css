@@ -72,7 +72,9 @@ h2 {
     color: white;
     border: none;
 }
-
+.insideForm>button:hover {
+    cursor: pointer;
+}
 .loginFooterContainer {
     width: 100%;
     position: relative;
