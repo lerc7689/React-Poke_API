@@ -98,11 +98,12 @@ body{
     flex-wrap: wrap;
 }
 .movements{
-background-color: rgb(231, 228, 228);
-padding: 15px;
-border-radius: 10px;
-box-shadow: 0 0 5px 5px rgb(102, 101, 101);
-background-color: rgba(72, 224, 85, 0.664);
+    background-color: rgb(231, 228, 228);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 5px rgb(102, 101, 101);
+    background-color: rgba(72, 224, 85, 0.664);
+    justify-content: space-between;
 }
 .typeTitle,
 .abilityTitle,
