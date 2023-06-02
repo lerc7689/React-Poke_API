@@ -36,12 +36,18 @@ body{
     color: rgb(156, 72, 72);
     font-weight: bolder;
     background-color: antiquewhite;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 5px rgb(102, 101, 101);
 }
 .type_ability_stat_Container{
     display: flex;
     width: 100%;
     justify-content: space-around;
     margin-bottom: 10px;
+    padding-bottom: 10px;
+    background-color: aquamarine;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 5px rgb(102, 101, 101);
 }
 .type_ability_container{
     display: flex;
@@ -60,7 +66,7 @@ body{
 .progress-bar {
    width: 200px;
    height: 30px;
-   background-color: rgb(186, 206, 212);
+   background-color: rgb(255, 255, 255);
    border-radius: 15px;
    overflow: hidden;
    position: relative;
