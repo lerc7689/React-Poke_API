@@ -51,7 +51,7 @@ const PokedexId = () =>{
                         <b className="statTitle">Stats </b>
                         {pokemonDetail?.stats.map(s => 
 
-                            <div className="progress-bar"><div><div className="statNameDiv"><b>{ s.stat.name[0].toUpperCase() + s.stat.name.slice(1)}</b></div> <div className="statpropDiv">{s.base_stat}</div></div>
+                            <div className="progress-bar"><div><div className="statNameDiv"><b>{ s.stat.name[0].toUpperCase() + s.stat.name.slice(1)}</b></div> <div className="statpropDiv">{s.base_stat  + "/150"}</div></div>
                                 <div className="progress" style={({width:s.base_stat*2})}></div>
                             </div>
                         )}

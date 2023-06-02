@@ -45,8 +45,14 @@ const PokemonCard = ({pokemonID}) =>{
         </div>
         <div className="stats_container" id={pokemon?.id}>
             {pokemon?.stats.map(s =>
-                    <div className="progress-bar"><div><div className="statNameDiv"><b>{ s.stat.name[0].toUpperCase() + s.stat.name.slice(1)}</b></div> <div className="statpropDiv">{s.base_stat}</div></div>
-                    <div className="progress" style={({width:s.base_stat*2})}></div>
+                    <div className="progress-bar_pokecard ">
+                        <div>
+                            <div className="statNameDiv">
+                                <b>{ s.stat.name[0].toUpperCase() + s.stat.name.slice(1)}</b>
+                            </div> 
+                              <div className="statpropDiv">{s.base_stat + "/150"}</div>
+                        </div>
+                    <div className="progress_pokecard" style={({width:s.base_stat*1.5})}></div>
                 </div>
             )}
         </div>

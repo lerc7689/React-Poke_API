@@ -65,7 +65,7 @@ body{
     overflow: auto;
 }
 .progress-bar {
-   width: 200px;
+   width: 250px;
    height: 30px;
    background-color: rgb(255, 255, 255);
    border-radius: 15px;
@@ -155,6 +155,9 @@ body{
         flex-direction: column;
         align-items: center;
     }
+    .progress-bar {
+        width: 190px;
+    }
     .typeTitle,
     .abilityTitle,
     .statTitle,
@@ -181,6 +184,10 @@ body{
     .statTitle,
     .moveTitle{
         font-size: 20px;
+    }
+    .abilities{
+        display: flex;
+        flex-direction: column;
     }
     .movements{
         margin-bottom: 20px;
