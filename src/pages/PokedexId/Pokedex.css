@@ -46,7 +46,7 @@ body{
     justify-content: space-around;
     margin-bottom: 10px;
     padding-bottom: 10px;
-    background-color: rgba(0, 255, 255, 0.829);
+    background-color: rgba(255, 255, 255, 0.829);
     border-radius: 10px;
     box-shadow: 0 0 5px 5px rgb(102, 101, 101);
 }
@@ -98,11 +98,10 @@ body{
     flex-wrap: wrap;
 }
 .movements{
-    background-color: rgb(231, 228, 228);
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 0 5px 5px rgb(102, 101, 101);
-    background-color: rgba(72, 224, 85, 0.664);
+    background-color: white;
     justify-content: space-between;
 }
 .typeTitle,
