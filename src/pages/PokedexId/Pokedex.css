@@ -46,7 +46,7 @@ body{
     justify-content: space-around;
     margin-bottom: 10px;
     padding-bottom: 10px;
-    background-color: lightgray;
+    background-color: rgb(235, 233, 233);
     border-radius: 10px;
     box-shadow: 0 0 5px 5px rgb(102, 101, 101);
 }
@@ -101,7 +101,7 @@ body{
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 0 5px 5px rgb(102, 101, 101);
-    background-color: lightgray;
+    background-color: rgb(235, 233, 233);
     justify-content: space-between;
 }
 .typeTitle,
