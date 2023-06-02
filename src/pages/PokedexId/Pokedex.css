@@ -107,10 +107,13 @@ body{
 .typeTitle,
 .abilityTitle,
 .statTitle,
-.moveTitle{
+.moveTitle,
+.weightTitle,
+.heightTitle{
     text-align: center;
     color: green;
-    font-size: 30px;
+    font-size: 25px;
+    font-weight: 600;
     margin: 3px;
     padding: 3px;
 }
@@ -122,7 +125,9 @@ body{
 }
 .singleType,
 .singleAbility,
-.singleMove
+.singleMove,
+.singleWeight,
+.singleHeight
 {
     color: white;
     background-color: rgb(205, 214, 40);

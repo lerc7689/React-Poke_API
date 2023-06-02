@@ -35,13 +35,20 @@ const PokemonCard = ({pokemonID}) =>{
             <img className="backimg" src={backpokeball} alt="" id={pokemon?.id}/>
         </div>
         <div className="types_container" id={pokemon?.id}>
-            <p id={pokemon?.id}><b id={pokemon?.id}>Type: </b></p>
+            <b id={pokemon?.id}>Type </b>
+
+            <div className="singletypescontainer">
             {pokemon?.types.map(t =>
-            <p key={t.type.name} id={pokemon?.id}>{t.type.name} /</p>)}
+            <p key={t.type.name} id={pokemon?.id}>{t.type.name[0].toUpperCase() + t.type.name.slice(1)}   </p>)}
+            </div>
+
         </div>
         <div className="stats_container" id={pokemon?.id}>
-            {pokemon?.stats.map(t =>
-            <p key={t.stat.name} id={pokemon?.id}><b id={pokemon?.id}>{t.stat.name[0].toUpperCase() + t.stat.name.slice(1)}</b> : {t.base_stat}</p>)}
+            {pokemon?.stats.map(s =>
+                    <div className="progress-bar"><div><div className="statNameDiv"><b>{ s.stat.name[0].toUpperCase() + s.stat.name.slice(1)}</b></div> <div className="statpropDiv">{s.base_stat}</div></div>
+                    <div className="progress" style={({width:s.base_stat*2})}></div>
+                </div>
+            )}
         </div>
     </div>
     </>)

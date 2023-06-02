@@ -10,6 +10,8 @@ const PokedexId = () =>{
     const getPokemon = async() =>{
         const pokemon = await getPokemonById(pokemonId)
         setPokemonDetail(pokemon)
+        console.log(pokemon)
+        console.log(pokemon.height)
     }
 
     const getPokemonImg = (sprites) => {
@@ -37,10 +39,13 @@ const PokedexId = () =>{
                 <div className="type_ability_stat_Container">
                     <div className="type_ability_container">
                         <b className="typeTitle">Type</b> 
-                        <p className="types">{pokemonDetail?.types.map(t => <p className="singleType">{t.type.name}</p>)} </p> 
+                        <p className="types">{pokemonDetail?.types.map(t => <p className="singleType">{t.type.name[0].toUpperCase() + t.type.name.slice(1)}</p>)} </p> 
                         <b className="abilityTitle">Abilities</b>
-                        <p className="abilities"> {pokemonDetail?.abilities.map(a => <p className="singleAbility">{a.ability.name}</p> )} </p>
-                        
+                        <p className="abilities"> {pokemonDetail?.abilities.map(a => <p className="singleAbility">{a.ability.name[0].toUpperCase() + a.ability.name.slice(1)}</p> )} </p>
+                        <p className="weightTitle">Weight</p>
+                        <p className="singleWeight">{pokemonDetail?.weight}</p>
+                        <p className="heightTitle">Height</p>
+                        <p className="singleHeight">{pokemonDetail?.height}</p>
                     </div>
                     <div className="stats">
                         <b className="statTitle">Stats </b>
@@ -57,7 +62,7 @@ const PokedexId = () =>{
                         <b className="moveTitle">Movements </b>
                         <div className="movements">
 
-                            {pokemonDetail?.moves.map(m => <p className="singleMove">{ m.move.name + " "}</p>)}
+                            {pokemonDetail?.moves.map(m => <p className="singleMove">{ m.move.name[0].toUpperCase() + m.move.name.slice(1) }</p>)}
                         </div>
                     </div>
             </div>
