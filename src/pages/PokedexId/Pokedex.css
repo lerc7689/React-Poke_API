@@ -3,23 +3,27 @@ body{
 }
 .pokedexIDcard{
     width: 100%;
-    height: 100vh;
     display: flex;
     justify-content: center;
+
 }
 .imgCotainer{
     width: 30%;
-    height: 100%;
     background-color: #D93F3F;
     border-right: 2px black solid;
+    position: relative;
+
 }
 .imgCotainer > img{
     width: 90%;
-    height: 90%;
+    position: sticky;
+    top: 140px;
+
 }
 .allInfoContainer{
     width: 70%;
     padding: 5px;
+    padding-bottom: 20px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -29,41 +33,102 @@ body{
 .detailPokemonName{
     text-align: center;
     width: 100%;
-    color: black;
-    /* font-family:'Times New Roman', Times, serif; */
+    color: rgb(156, 72, 72);
     font-weight: bolder;
     background-color: antiquewhite;
 }
-.types,
-.abilities,
-.movements,
+.type_ability_stat_Container{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+.type_ability_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
 .stats{
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
+    gap: 5px;
+    overflow: auto;
+}
+.progress-bar {
+   width: 200px;
+   height: 30px;
+   background-color: rgb(186, 206, 212);
+   border-radius: 15px;
+   overflow: hidden;
+   position: relative;
+ }
+.progress-bar>div:nth-child(1){
+   display: flex;
+   justify-content: space-between;
+   line-height: 30px;
+   position: absolute;
+   width: 100%;
+}
+.statNameDiv{
+   margin-left: 5px;
+}
+.statpropDiv{
+   margin-right: 5px;
+}
+.progress {
+    height: 100%;
+    background:  linear-gradient(90deg, rgba(224,236,20,1) 21%, rgba(0,224,255,1) 81%);
+    border-radius: 15px;
+    transition: width 0.3s ease-in-out;
+}
+.types,
+.abilities,
+.movements{
+    display: flex;
+    flex-wrap: wrap;
+}
+.movements{
+background-color: rgb(231, 228, 228);
+padding: 15px;
+border-radius: 10px;
+box-shadow: 0 0 5px 5px rgb(102, 101, 101);
+background-color: rgb(72, 224, 84);
 }
 .typeTitle,
 .abilityTitle,
 .statTitle,
 .moveTitle{
-    color: white;
-    background-color:#D93F3F;
-    border-radius: 10px;
+    text-align: center;
+    color: green;
+    font-size: 30px;
     margin: 3px;
     padding: 3px;
+}
+.moveTitle{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
 }
 .singleType,
 .singleAbility,
-.singleMove,
-.singleStat{
+.singleMove
+{
     color: white;
-    background-color: gray;
+    background-color: rgb(205, 214, 40);
     border-radius: 10px;
     margin: 3px;
-    padding: 3px;
+    padding: 5px;
+}
+.singleMove{
+    background-color: rgb(52, 150, 60);
 }
 @media (min-width: 320px) and (max-width: 578px) {
     .allInfoContainer{
-        font-size: 6px;
+        font-size: 9px;
         padding-top: 5px;
         margin-bottom: 5px;
         width: 70%;
@@ -74,20 +139,36 @@ body{
         margin-bottom: 10px;
         font-size: 30px;
     }
+    .type_ability_stat_Container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .typeTitle,
+    .abilityTitle,
+    .statTitle,
+    .moveTitle{
+        font-size: 15px;
+    }
     .movements{
         margin-bottom: 10px;
-        font-size: 7px;
+        font-size: 9px;
     }
 }
 @media (min-width: 579px) and (max-width: 768px) {
     .allInfoContainer{
-        font-size: 7px;
+        font-size: 10px;
         gap: 0px;
     }
     .detailPokemonName{
         margin-top: 50px;
         margin-bottom: 20px;
         font-size: 40px;
+    }
+    .typeTitle,
+    .abilityTitle,
+    .statTitle,
+    .moveTitle{
+        font-size: 20px;
     }
     .movements{
         margin-bottom: 20px;
