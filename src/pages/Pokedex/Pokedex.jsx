@@ -20,7 +20,6 @@ const Pokedex = () =>{
         <SettingsModalComp setQuatityPagination={setQuatityPagination} />
 
         <p className="trainerMessage"> <em className="trainerMessage_userName">Welcome {userName},</em> here you can find your favorite pokemon</p>
-        
         <SearchByName nameInitial={pokemonName} typeInitial={pokemonTypeId} />
 
         <Pagination 

@@ -10,8 +10,10 @@ const SearchByName = ({nameInitial, typeInitial}) =>{
     const [selectTypeValue, setSelectTypeValue] = useState(typeInitial)
 
     const handleChange = (e) =>{
-        const name = e.target.value;
-        if(!name){ setNameError("the name is empty")
+        let name = e.target.value;
+        console.log(name)
+        if(!name){ 
+            setNameError("the name is empty");
             name=""
         }else setNameError("")
         setPokemonName(name)
