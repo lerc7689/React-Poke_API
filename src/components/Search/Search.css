@@ -34,7 +34,8 @@
     background: #b33c3c;
 }
 .searchError {
-    text-align: center;
+    margin-left: 25px;
+    text-align:start;
     color: #D93F3F;
 }
 .pokemonType{
@@ -60,6 +61,9 @@
     }
     .insideFormPokedex>input{
         font-size: 8px;
+    }
+    .searchError {
+        font-size: 10px;
     }
     
 }
