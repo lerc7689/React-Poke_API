@@ -11,7 +11,6 @@ const SearchByName = ({nameInitial, typeInitial}) =>{
 
     const handleChange = (e) =>{
         let name = e.target.value;
-        console.log(name)
         if(!name){ 
             setNameError("the name is empty");
             name=""
