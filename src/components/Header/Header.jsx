@@ -1,5 +1,5 @@
 import "./Header.css";
-import { useNavigate } from "react-router-dom";
+import { useLocation, NavLink, useNavigate } from "react-router-dom";
 import pokedex_img from "../../assets/img/Pokedex.png";
 import { useContext } from "react";
 import { userNameContext } from "../../context/UserNameContext";
@@ -7,6 +7,8 @@ import { userNameContext } from "../../context/UserNameContext";
 const Header = () => {
     const {removeUserName} = useContext(userNameContext);
     const navigate = useNavigate();
+    const location = useLocation();
+    
     
     const logout = () =>{
         removeUserName();
@@ -16,6 +18,9 @@ const Header = () => {
     <>
     <header>
         <div className="redDiv">
+        {location.pathname.startsWith("/pokedex/") && (
+            <NavLink className={"nav-back-btn"} to={"/pokedex"}>Atrás</NavLink>
+        )}
         <button onClick={logout} className="logoutBtn">Logout </button>
         </div>
         <div className="blackDiv">

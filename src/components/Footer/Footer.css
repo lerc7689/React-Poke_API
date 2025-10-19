@@ -1,14 +1,21 @@
-.footer {
-    height: 5%;
-    width: 100vw;
-    background-color: rgb(17, 16, 16);
-    color: white;
-    position: fixed;
-    bottom: 0px;
+.footerContainer {
+    /* bottom: 0px;
     display: flex;
     justify-content: center;
     align-items: end;
     gap: 20px;
+    padding-top: 5px; */
+
+     height: 5rem;
+    width: 100vw;
+    background-color: rgb(17, 16, 16);
+    color: lightgray;
+    position: relative;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
     padding-top: 5px;
 }
 
@@ -17,19 +24,24 @@
     height: 22px;
 }
 
-.footer>p {
+.imagesContainer{
+    display: flex;
+    gap: 5px;
+}
+
+.footerContainer>p {
     text-align: center;
     font-size: small;
     line-height: 30px;
 }
 
 @media (min-width: 320px) and (max-width: 576px) {
-    .footer {
+    .footerContainer {
         height: 4%;
         padding-top: 5px;
         font-size: 5px;
     }
-    .footer >p {
+    .footerContainer >p {
         font-size: 10px;
         line-height: 20px;
     }
@@ -40,7 +52,7 @@
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
-    .footer {
+    .footerContainer {
         height: 4%;
         padding-top: 5px;
     }

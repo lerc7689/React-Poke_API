@@ -16,18 +16,20 @@ const Pokedex = () =>{
     const [pageNumber, listSlice, pages, changePageTo] = usePagination(pokemons, quatityPagination)
 
     return(
-    <>
+    <div style={{
+        padding:"1rem",
+    }}>
         <SettingsModalComp setQuatityPagination={setQuatityPagination} />
 
         <p className="trainerMessage"> <em className="trainerMessage_userName">Welcome {userName},</em> here you can find your favorite pokemon</p>
         <SearchByName nameInitial={pokemonName} typeInitial={pokemonTypeId} />
 
-        <Pagination 
+        {/* <Pagination 
             pages ={pages} 
             changePageTo={changePageTo} 
             pageNumber={pageNumber} 
             setQuatityPagination={setQuatityPagination}
-        />
+        /> */}
               
         <div className="pokemonList">
         {listSlice && (
@@ -46,7 +48,7 @@ const Pokedex = () =>{
             pageNumber={pageNumber} 
             setQuatityPagination={setQuatityPagination}
         />  
-    </>
+    </div>
     )
 }
 

@@ -30,9 +30,11 @@ const SearchByName = ({nameInitial, typeInitial}) =>{
     useEffect(()=>{
         loadPokemonTypes()
     },[])
+    
     useEffect(()=>{
         setPokemonName(nameInitial)
     },[nameInitial])
+
     useEffect(()=>{
         setSelectTypeValue(typeInitial)
     },[typeInitial])

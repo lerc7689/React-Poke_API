@@ -7,6 +7,12 @@
     margin-bottom: 30px;
 }
 
+.pagination p{
+    color: lightgray;
+    line-height: 200%;
+    /* background-color: red; */
+}
+
 .btnPages {
     border-radius: 10px;
     color: #d42828;

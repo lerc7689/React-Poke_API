@@ -11,9 +11,9 @@ return(<>
 
 <button className="settingBtn" onClick={()=> setIsSettingModalVisible(!isSettingModalVisible)}>Settings </button>
 
-    {isSettingModalVisible &&
-        <div className="settingModal">
-              <div className="select">
+    {/* {isSettingModalVisible && */}
+        <div className={`settingModal ${isSettingModalVisible ? "show" : ""}`}>
+              <div className="selectContainer">
               <select name="select" onChange={(e)=>  {if(Number(e.target.value))setQuatityPagination(e.target.value)}}>
               <option selected>Change quantity per page</option>
                   <option >20</option>
@@ -27,11 +27,14 @@ return(<>
                 <button 
                 className="switchInside" 
                 onClick={()=>changeBackgroundFN()}
-                style={{right:changeBackground && 0, left:changeBackground == false && 0}}
+                // style={{right:changeBackground && 0, left:changeBackground == false && 0}}
+                style={{
+                    transform: changeBackground ? "translateX(-20px)" : "translateX(0)",
+                }}
                 ></button>
             </div>
       </div>
-    } 
+    {/* }  */}
 </>)
 }
 

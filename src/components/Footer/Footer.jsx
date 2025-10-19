@@ -7,11 +7,13 @@ const Footer = () => {
     return(
     <>
 
-    <div className="footer">
-            <a href="https://wa.me/8297213784?text=¡Estoy+interesado!"><img src={whatsappImage} className="Image"/></a>
-           <a href="https://msng.link/o?@lerc7689=ig"><img src={igImage} className="Image"/></a>
+      <div className="footerContainer">
+        <div className="imagesContainer">
+          <a href="https://wa.me/8297213784?text=¡Estoy+interesado!"><img src={whatsappImage} className="Image"/></a>
+          <a href="https://msng.link/o?@lerc7689=ig"><img src={igImage} className="Image"/></a>
+        </div>
      
-            <p>Created by Luis E. Ramirez C. 2023®</p>
+        <p>Created by Luis E. Ramirez C. 2023®</p>
       </div>
     </>);
 }
