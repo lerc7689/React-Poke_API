@@ -56,9 +56,10 @@ select {
     width: 75px;
     height: 75px;
     transition: 0.2s ease-in-out;
+    background-color: #e61731;
 }
 .settingBtn:active{
-    background-color: lightgray;
+    background-color: #b51428;
 }
 .switchContainer{
     border-radius: 15px;
